@@ -13,10 +13,13 @@
 //
 // No hints this time ;)
 
-// I AM NOT DONE
-
 // Put your function here!
-// fn calculate_price_of_apples {
+fn calculate_price_of_apples(apples: u32) -> u32 {
+    match apples {
+        coin if coin <= 40 => coin * 2,
+        _ => apples,
+    }
+}
 
 // Don't modify this function!
 #[test]
